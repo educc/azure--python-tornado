@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World from Flask'
+	return 'Hello, World from Flask'
 
 
 @app.route('/data')
@@ -17,7 +17,7 @@ def hello_world():
 		{ name:"edu", age:25 },
 		{ name:"jobs", age: 56}
 	]
-    return json.dumps(data)
+	return json.dumps(data)
 ###########################################################
 
 
